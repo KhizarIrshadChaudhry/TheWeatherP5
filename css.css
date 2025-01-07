@@ -1,0 +1,29 @@
+body {
+    margin: 0;
+    padding: 0;
+    overflow: hidden; 
+}
+
+@font-face {
+    font-family: PressStart2P;
+    src: url(fonts/PressStart2P.ttf);
+}
+
+
+.btn{
+    font-family: PressStart2P;
+    text-align: center;
+    width: 50%;
+    padding: 17px 0px;
+    font-size: 17.5px;
+    border: 2px solid transparent;
+    border-color: #000;
+    color: #000;
+    background: transparent;
+    line-height: 30px;
+}
+.btn:hover {
+    background-color: #000;
+    color: #fff;
+}
+
