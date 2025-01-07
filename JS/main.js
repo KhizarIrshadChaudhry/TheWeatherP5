@@ -82,51 +82,6 @@ function draw(){
   
 
 function visVejret() {
-  window.vejret = {
-    "coord": {
-        "lon": 12.5158,
-        "lat": 55.6538
-    },
-    "weather": [
-        {
-            "id": 803,
-            "main": "Clouds",
-            "description": "broken clouds",
-            "icon": "04d"
-        }
-    ],
-    "base": "stations",
-    "main": {
-        "temp": 280.83,
-        "feels_like": 277.21,
-        "temp_min": 279.99,
-        "temp_max": 281.19,
-        "pressure": 1010,
-        "humidity": 81,
-        "sea_level": 1010,
-        "grnd_level": 1008
-    },
-    "visibility": 10000,
-    "wind": {
-        "speed": 6.69,
-        "deg": 220
-    },
-    "clouds": {
-        "all": 75
-    },
-    "dt": 1732609925,
-    "sys": {
-        "type": 2,
-        "id": 2091609,
-        "country": "DK",
-        "sunrise": 1732604807,
-        "sunset": 1732632496
-    },
-    "timezone": 3600,
-    "id": 2619528,
-    "name": "Hvidovre",
-    "cod": 200
-  };
   let unixTid = window.vejret.dt;
   let datoObj = new Date(unixTid*1000);
   let dato = datoObj.toLocaleDateString();

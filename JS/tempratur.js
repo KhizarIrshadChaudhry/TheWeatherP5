@@ -23,8 +23,7 @@ function drawTempratur(temp, folesSom, min, max, x, y){
 function drawIndikationslinje(temp, folesSom, min, max, linjeStartX, linjeSlutX, linjeY){
     push();
         //mapper position relativ til min- og maxtemp
-        let tempX = map(temp, min, max, linjeStartX, linjeSlutX)+random(-2, 2);
-        temp = temp+random(-0.2, 2).toFixed(0);
+        let tempX = map(temp, min, max, linjeStartX, linjeSlutX)+random(-2, -0.1)+random(0.2, 2);
         let folesSomX = map(folesSom, min, max, linjeStartX, linjeSlutX)
 
         // mange små linjer for at lave gradientfarveskift til linje
@@ -57,6 +56,6 @@ function drawIndikationslinje(temp, folesSom, min, max, linjeStartX, linjeSlutX,
         stroke(0);
         line(folesSomX, linjeY-15, folesSomX, linjeY+15);
         stroke("#000080");
-        line(tempX, linjeY-15, tempX, linjeY+15);
+        line(tempX+random(-0.2, 2).toFixed(0), linjeY-15, tempX, linjeY+15);
     pop();
 }

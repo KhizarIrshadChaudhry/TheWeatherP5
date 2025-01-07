@@ -4,7 +4,7 @@ let coordinates;
 //---------HENT LOKATION---------
 function lokationsPermission() {
     if (navigator.geolocation) { 
-      navigator.geolocation.getCurrentPosition(hentLokation, lokationsFejl);
+      s
     } else {
       return "geolokation virker ik";
     }
